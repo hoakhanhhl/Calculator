@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Caculator</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="container_caculator">
+            <div class="caculator_input">
+
+            </div>
+            <div class="caculator_output">
+                <h1 id="output"></h1>
+            </div>
+            <div class="caculator_keyboard">
+                <div class="caculator_keyboard_button">
+                    <button class="caculator_keyboard_button_btn percent" style="background-color: #F2F5F9;" onclick="percent()">%</button>
+                    <button class="caculator_keyboard_button_btn clearBtn" style="background-color: #F2F5F9;" onclick="deleteAll()">C</button>
+                    <button class="caculator_keyboard_button_btn delete" style="background-color: #F2F5F9;" onclick="del()">
+                        <i class="fa fa-arrow-left" style=" color: #9AABBE; text-align: center; font-size: large;"></i></button>
+                    <button class="caculator_keyboard_button_btn addBtn" onclick="addInput(':')" style="background-color: #4B6D91; color: white;">:</button>
+                </div>
+                <div class="caculator_keyboard_button">
+                    <button class="caculator_keyboard_button_btn addBtn" value="7" onclick="addInput(7)">7</button>
+                    <button class="caculator_keyboard_button_btn addBtn" value="8" onclick="addInput(8)">8</button>
+                    <button class="caculator_keyboard_button_btn addBtn" value="9" onclick="addInput(9)">9</button>
+                    <button class="caculator_keyboard_button_btn addBtn" style="background-color: #4B6D91; color: white;" onclick="addInput('x')">x</button>
+                </div>
+                <div class="caculator_keyboard_button">
+                    <button class="caculator_keyboard_button_btn addBtn" value="4" onclick="addInput(4)">4</button>
+                    <button class="caculator_keyboard_button_btn addBtn" value="5" onclick="addInput(5)">5</button>
+                    <button class="caculator_keyboard_button_btn addBtn" value="6" onclick="addInput(6)">6</button>
+                    <button class="caculator_keyboard_button_btn addBtn" style="background-color: #4B6D91; color: white;" onclick="addInput('-')">-</button>
+                </div>
+                <div class="caculator_keyboard_button">
+                    <button class="caculator_keyboard_button_btn addBtn" value="1" onclick="addInput(1)">1</button>
+                    <button class="caculator_keyboard_button_btn addBtn" value="2" onclick="addInput(2)">2</button>
+                    <button class="caculator_keyboard_button_btn addBtn" value="3" onclick="addInput(3)">3</button>
+                    <button class="caculator_keyboard_button_btn addBtn" style="background-color: #4B6D91; color: white;" onclick="addInput('+')">+</button>
+                </div>
+                <div class="caculator_keyboard_button">
+                    <button class="caculator_keyboard_button_btn ">+/-</button>
+                    <button class="caculator_keyboard_button_btn addBtn" value="0" onclick="addInput(0)">0</button>
+                    <button class="caculator_keyboard_button_btn addBtn" onclick="addInput('.')">,</button>
+                    <button class="caculator_keyboard_button_btn resultBtn" style="background-color: #EB8468; color: white;" onclick="Calculate()">=</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src='./assets/js/script.js'>
+    </script>
+
+</body>
+
+</html>
